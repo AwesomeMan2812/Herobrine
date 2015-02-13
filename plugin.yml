@@ -1,0 +1,9 @@
+name: bHub
+
+build/version: v0.0.1
+
+author: AwesomeMan2812
+
+main: src.AwesomeMan2812.bHub.main
+
+description: A brand new hub plugin under heavy development (alpha)
