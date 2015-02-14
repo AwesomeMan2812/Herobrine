@@ -1,0 +1,30 @@
+##################
+###bHub v0.0.1####
+##################
+
+#true=enabled
+#false=disabled
+
+#NO COLOR CODE SUPPORT HAS BEEN ADDED YET
+
+#SETTINGS
+#Disable Rain/Thunderstorms?
+StopRain: true
+#Force Daytime?
+ForceDay: true
+
+#DEVICES
+#Enable Server Selector? If so, which slot shall it be put into(1-9)?
+EnableSelector: true
+  slot: 1
+#Servers in selector (Example put for you)
+Server1:
+  Server1Name: Factions
+  Server1Lore: The famous factions game!
+  Server1Item: DIAMOND_SWORD
+  Server1Command: 
+  'say Change all settings in the config!'
+#Enable Magic Clock? If so, which slot shall it be put into(1-9)?
+EnableClock: true
+  slot: 9
+
