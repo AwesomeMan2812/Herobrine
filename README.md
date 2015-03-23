@@ -1,2 +1,2 @@
-# bHub
-Custom Hub plugin under heavy development
+# Tag! Server Edition
+Custom Tag Minigame plugin under heavy development
