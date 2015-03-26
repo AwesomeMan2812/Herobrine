@@ -1,8 +1,45 @@
-name: bHub
-main: src.AwesomeMan2812.bHub.main
-version: 0.0.1
-author: AwesomeMan2812
+name: SuperCubeBrothers
+main: AwesomeMan2812.main.herobrine
+version: 3.0
+authors: [AwesomeMan2812]
+softdepend: [WorldEdit]
 commands:
-   bhub:
-        description: Main plugin command
-        usage: /bhub [action]
+   scb:
+      description: Super Cube Brother Commands
+      usage: /<command> <Type /scb help>
+      permission: scb.commands
+      permission-message: You don't have permission to use that command.
+permissions:
+    scb.*:
+        description: Gives access to all SCB.
+        default: op
+        children:
+            scb.command.create: true
+            scb.command.delete: true
+            scb.command.disable: true
+            scb.command.enable: true
+            scb.command.join: true
+            scb.command.leave: true
+            scb.command.setglobby: true
+            scb.command.setspawn: true
+            scb.command.start: true
+            scb.signs.use: true
+            scb.command.selclass: true
+    scb.user:
+        description: Gives access to User SCB Commmands.
+        default: true
+        children:
+            scb.signs.use: true
+            scb.command.selclass: true
+            scb.classes.default: true
+    scb.mod:
+        description: Gives access to Moderator SCB Commands.
+        default: op
+        children:
+            scb.command.join: true
+            scb.command.leave: true
+            scb.signs.use: true
+            scb.command.start: true
+            scb.command.disable: true
+            scb.command.enable: true
+            scb.classes.default: true
