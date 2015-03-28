@@ -1,30 +1,28 @@
 name: Herobrine
-main: AwesomeMan2812.main.herobrine
-version: 3.0
+main: AwesomeMan2812.plugins.herobrine.main
+version: 1.0
 authors: [AwesomeMan2812]
-softdepend: [WorldEdit]
+depend: [WorldEdit]
 commands:
    hb:
       description: Main Herobrine Command
       usage: /<command> [action]
-      permission: hb.main
+      permission: hb.default
       permission-message: You don't have permission to use this command!
 permissions:
     hb.*:
         description: Gives access to all Herobrine.
         default: op
         children:
-            herobrine.command.create: true
-            herobrine.command.delete: true
-            hb.command.disable: true
-            hb.command.enable: true
-            hb.command.join: true
-            hb.command.leave: true
-            hb.command.setglobby: true
-            hb.command.setspawn: true
-            hb.command.start: true
-            hb.signs.use: true
-            hb.command.selclass: true
+            herobrine.command.setlobby: true
+            herobrine.command.setmlobby: true
+            herobrine.command.createarena: true
+            herobrine.command.setspawn: true
+            herobrine.command.deletearena: true
+            herobrine.command.start: true
+            herobrine.command.stop: true
+            herobrine.command.join: true
+            herobrine.command.leave: true
     hb.default:
         description: Gives access to User SCB Commmands.
         default: true
