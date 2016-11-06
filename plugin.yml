@@ -5,17 +5,17 @@ authors: [AwesomeMan2812]
 depend: [WorldEdit]
 commands:
    hb:
-      description: Main Herobrine Command
+      description: Main Herobrine Command, type /hb help for more!
       usage: /<command> [action]
       permission: hb.default
       permission-message: You don't have permission to use this command!
 permissions:
     hb.*:
-        description: Gives access to all Herobrine.
+        description: Gives access to all Herobrine Commands.
         default: op
         children:
             herobrine.command.setlobby: true
-            herobrine.command.setmlobby: true
+            herobrine.command.setglobby: true
             herobrine.command.createarena: true
             herobrine.command.setspawn: true
             herobrine.command.deletearena: true
@@ -24,20 +24,16 @@ permissions:
             herobrine.command.join: true
             herobrine.command.leave: true
     hb.default:
-        description: Gives access to User SCB Commmands.
+        description: Gives access to User Herobrine Commmands.
         default: true
         children:
-            scb.signs.use: true
-            scb.command.selclass: true
-            scb.classes.default: true
+            herobrine.signs.use: true
+            herobrine.command.join: true
+            herobrine.command.leave: true
     hb.mod:
-        description: Gives access to Moderator SCB Commands.
+        description: Gives access to Moderator Herobrine Commands.
         default: op
         children:
-            scb.command.join: true
-            scb.command.leave: true
-            scb.signs.use: true
-            scb.command.start: true
-            scb.command.disable: true
-            scb.command.enable: true
-            scb.classes.default: true
+            herobrine.command.start: true
+            herobrine.command.disable: true
+            herobrine.command.enable: true
